@@ -143,7 +143,7 @@ if(isset($_POST['savechanges'])){
     $result=mysqli_query($con, $sql);
 			if(mysqli_num_rows($result)==5){
 					echo '<script>alert("You reach maximum order of 5");
-								window.loaction.href="availableframe.php";</script>';
+								window.loaction.href="availableframe.html";</script>';
 				}
 				else{
 
@@ -151,10 +151,10 @@ if(isset($_POST['savechanges'])){
         $result=mysqli_query($con, $sql);
 							if($result==true){
 								echo '<script>alert("Your order will be process.The system will follow up by contacting your number thankyou!");
-											 window.location.href="availableframe.php"</script>';}
+											 window.location.href="availableframe.html"</script>';}
 											 else{
 												 echo '<script>alert("Sorry unable to process your request. please try again later!");
-											 window.location.href="availableframe.php"</script>';
+											 window.location.href="availableframe.html"</script>';
 												 }
 	}	}
 ?>
